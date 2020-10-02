@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components";
 
-const ProjectPage = ({projectTitle}) => {
-    return (
-        <div>
-            
-        </div>
-    );
+const ProjectPage = ({ className, match }) => {
+  return (
+    <div className={className}>
+      <h1>{match.params.projectId}</h1>
+      <p></p>
+    </div>
+  );
 };
 
-export default ProjectPage;
+export default styled(ProjectPage)``;

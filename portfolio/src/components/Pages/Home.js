@@ -5,32 +5,35 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Home = ({ className }) => {
+
   return (
     <div className={className}>
       <h1>MARIANA MATIAS</h1>
       <p>Front End Developer & UI/UX Researcher</p>
       <p>Georgia Tech Computer Science</p>
-      <button
-        onClick={() => {
-          window.open("https://www.linkedin.com/in/marimatias/", "_blank");
-        }}
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-      </button>
-      <button
-        onClick={() => {
-          window.open("mailto:mariana@gatech.edu", "_blank");
-        }}
-      >
-        <FontAwesomeIcon icon={faEnvelope} />
-      </button>
-      <button
-        onClick={() => {
-          window.open("https://www.instagram.com/cestmariana/", "_blank");
-        }}
-      >
-        <FontAwesomeIcon icon={faInstagram} />
-      </button>
+      <div className="links">
+        <a
+          href="https://www.linkedin.com/in/marimatias/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a
+          href="mailto:mariana@gatech.edu"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+        <a
+          href="https://www.instagram.com/cestmariana/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+      </div>
     </div>
   );
 };
@@ -43,16 +46,28 @@ export default styled(Home)`
   transform: translate(-50%, -50%);
   text-align: center;
 
+  a {
+    color: #ccc;
+    font-size: 24px;
+    transition: all 0.2s;
+
+    :hover {
+      color: rgb(156, 39, 176);
+    }
+  }
+
+  .links * {
+    padding: 0 10px 0 10px;
+  }
+
   h1 {
     font-size: 7rem;
-    font-family: "Karla", sans-serif;
     margin: 0rem;
     font-weight: 800;
   }
 
   p {
     line-height: 1rem;
-    font-weight: 600;
   }
 
   @media screen and (max-width: 992px) {

@@ -34,15 +34,12 @@ export default styled(Menu)`
     margin-right: 2rem;
     text-decoration: none;
     transition: all 0.3s ease;
-
-    &:visited {
-      color: black;
-    }
+    color: black;
 
     &.active {
       &:after {
         width: 100%;
-        background: #CC4B30;
+        background: #d94f36;
       }
     }
 
@@ -59,7 +56,7 @@ export default styled(Menu)`
     :hover {
       &:after {
         width: 100%;
-        background: #CC4B30;
+        background: #d94f36;
       }
     }
   }

@@ -14,34 +14,34 @@ import Resume from "./components/Pages/Resume";
 import Projects from "./components/Pages/Projects";
 import ProjectRoutes from "./components/Projects/ProjectRoutes";
 import Menu from "./components/Menu";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App({ className }) {
   return (
     <div className={className}>
+      <ToastContainer />
+
       <Router>
         <div>
-          {/* TODO: Style menu */}
           <Menu className="menu">
             <NavLink exact to="/" activeClassName="active">
               Home
             </NavLink>
-            {/* <NavLink to="/about">About</NavLink> */}
+            <NavLink to="/about">About</NavLink>
             <NavLink exact to="/projects">
               Projects
             </NavLink>
             {/* <NavLink to="/resume">Resume</NavLink> */}
           </Menu>
 
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-          {/* TODO: replace with components */}
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={Projects} />
-            <Route exact path="/resume" component={Resume} />
             {ProjectRoutes}
-            <Route component={ErrorPage} />
+            <Route exact path="/resume" component={Resume} />
+            <Route path="*" component={ErrorPage} status={404} />
           </Switch>
         </div>
       </Router>
@@ -57,7 +57,7 @@ export default styled(App)`
   padding: 3em;
 
   *::selection {
-    background: #EDAA35;
+    background: #FDD734;
   }
 
   @media screen and (max-width: 992px) {

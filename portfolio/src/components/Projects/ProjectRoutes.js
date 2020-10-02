@@ -1,9 +1,9 @@
 import React from 'react';
-import Wisteria from './Wisteria';
+import Page from '../Pages/ProjectPage';
 const { Route } = require("react-router-dom");
 
 const routes = (
-    <Route exact path="/wisteria" component={Wisteria} />
+    <Route path={"/projects/:projectId"} component={Page}/>
 )
 
 export default routes;
