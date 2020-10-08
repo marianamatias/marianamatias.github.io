@@ -8,13 +8,32 @@ const ErrorPage = ({ className }) => {
 
   return (
     <div className={className}>
-      <h1>This page does not exist :(</h1>
+      {/* <h1>This page does not exist :(</h1> */}
+      <a
+        href="https://www.renemagritte.org/the-treachery-of-images.jsp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <h1>Ceci n'est pas une page 404</h1>
+      </a>
       <Button onClick={() => history.push("/")}>Go back to Home</Button>
     </div>
   );
 };
 
 export default styled(ErrorPage)`
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  h1 {
+    font-family: "Dawning of a New Day", cursive;
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px #ccc;
+    margin: 0rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+  }
   position: absolute;
   width: 100%;
   top: 50%;

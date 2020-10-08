@@ -12,6 +12,12 @@ const Menu = ({ className, children }) => {
 export default styled(Menu)`
   background: white;
   opacity: 0.8;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   nav {
     margin: auto;
@@ -22,14 +28,6 @@ export default styled(Menu)`
     font-size: 14pt;
   }
 
-  width: 100%;
-  padding: 1.5rem 1rem;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-
   a {
     margin-right: 2rem;
     text-decoration: none;
@@ -39,7 +37,7 @@ export default styled(Menu)`
     &.active {
       &:after {
         width: 100%;
-        background: #d94f36;
+        background: #E7030D;
       }
     }
 
@@ -56,7 +54,7 @@ export default styled(Menu)`
     :hover {
       &:after {
         width: 100%;
-        background: #d94f36;
+        background: #E7030D;
       }
     }
   }

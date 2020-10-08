@@ -57,7 +57,7 @@ export default styled(App)`
   padding: 3em;
 
   *::selection {
-    background: #FDD734;
+    background: #fdd734;
   }
 
   @media screen and (max-width: 992px) {

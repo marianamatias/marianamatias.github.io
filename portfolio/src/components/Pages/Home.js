@@ -5,11 +5,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Home = ({ className }) => {
-
   return (
     <div className={className}>
-      <h1>MARIANA MATIAS</h1>
-      <p>Front End Developer & UI/UX Researcher</p>
+      <h1>Mariana Matias</h1>
+      <p>Front End Developer & UX Designer</p>
       <p>Georgia Tech Computer Science</p>
       <div className="links">
         <a
@@ -61,7 +60,9 @@ export default styled(Home)`
   }
 
   h1 {
+    font-family: "Dawning of a New Day", cursive;
     font-size: 7rem;
+    text-shadow: 2px 2px 5px #ccc;
     margin: 0rem;
     font-weight: 800;
   }

@@ -15,13 +15,15 @@
     "google-translate": "^3.0.0",
     "lodash": "^4.17.20",
     "react": "^16.13.1",
+    "react-css-burger": "^0.2.0",
     "react-dom": "^16.13.1",
     "react-loading-skeleton": "^2.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
     "react-toastify": "^6.0.8",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "typescript": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
