@@ -18,6 +18,6 @@ export default styled(Button)`
     box-shadow: 6px 9px;
   }
   font-weight: 600;
-  background-color: #00BCD4;
+  background-color: #04c4de;
   cursor: pointer;
 `;

@@ -10,6 +10,8 @@ const Menu = ({ className, children }) => {
 };
 
 export default styled(Menu)`
+  display: flex;
+  justify-content: space-between;
   background: white;
   opacity: 0.8;
   width: 100%;
@@ -19,6 +21,10 @@ export default styled(Menu)`
   left: 0;
   right: 0;
 
+  p {
+    font-family: "Dawning of a New Day", cursive;
+  }
+  
   nav {
     margin: auto;
     width: 1000px;
@@ -37,7 +43,7 @@ export default styled(Menu)`
     &.active {
       &:after {
         width: 100%;
-        background: #E7030D;
+        background: #ff3b00;
       }
     }
 
@@ -54,12 +60,15 @@ export default styled(Menu)`
     :hover {
       &:after {
         width: 100%;
-        background: #E7030D;
+        background: #ff3b00;
       }
     }
   }
 
   @media screen and (max-width: 992px) {
+    p {
+      display: none;
+    }
     nav {
       justify-content: flex-start;
     }

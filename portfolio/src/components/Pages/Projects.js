@@ -33,14 +33,14 @@ const Projects = ({ className, match }) => {
       {loading && (
         <div className="projects-grid">
           {[...Array(3)].map((e, i) => (
-            <span key={i}>
+            <div className="box" key={i}>
               <Skeleton height={120} />
-              <div>
-                <Skeleton height={30} width={`40%`} />
+              <div className="bottom-box">
+                <Skeleton width={`40%`} />
+                <Skeleton />
+                <Skeleton width={`80%`} />
               </div>
-              <Skeleton />
-              <Skeleton width={`80%`} />
-            </span>
+            </div>
           ))}
         </div>
       )}
@@ -60,6 +60,17 @@ const Projects = ({ className, match }) => {
 };
 
 export default styled(Projects)`
+  .box {
+    border-radius: 7px;
+    border-bottom: solid 1px #f1f1f1;
+    border-right: solid 1px #f1f1f1;
+    border-left: solid 1px #f1f1f1;
+
+    .bottom-box {
+      padding: 1rem;
+    }
+  }
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -23,11 +23,22 @@ body {
 
 p {
   font-family: "Karla", serif;
+  font-size: 13pt;
+  line-height: 1.5rem;
 }
 a {
   font-family: "Karla", serif;
 }
-
+mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  background-color: #ffeb94;
+  transition: all 0.3s;
+}
+mark:hover {
+  background-color: #fdd734;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

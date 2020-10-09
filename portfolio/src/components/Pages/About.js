@@ -1,8 +1,6 @@
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
+import SocialLinks from "../SocialLinks";
 
 const About = ({ className }) => {
   return (
@@ -29,8 +27,15 @@ const About = ({ className }) => {
           <p>
             My biggest passion is a combination of traveling, learning
             languages, and discovering other cultures. I am a huge advocate for
-            the benefits of travel - I've done a few exchanges in France 🇫🇷,
-            I've interned in Brazil 🇧🇷, and I'm nowhere near done going abroad!
+            the benefits of travel - I've done a few exchanges in France{" "}
+            <span role="img" aria-label="fr">
+              🇫🇷
+            </span>
+            , I've interned in Brazil{" "}
+            <span role="img" aria-label="br">
+              🇧🇷
+            </span>
+            , and I'm nowhere near done going abroad!
           </p>
           {/* <p>
             In terms of personal development, I'm really excited to be learning
@@ -42,27 +47,7 @@ const About = ({ className }) => {
 
           <div className="links">
             <h3 className="connect">Soyons amis!</h3>
-            <a
-              href="https://www.linkedin.com/in/marimatias/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a
-              href="mailto:mariana@gatech.edu"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-            <a
-              href="https://www.instagram.com/cestmariana/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
+            <SocialLinks />
           </div>
         </div>
       </div>
@@ -71,13 +56,14 @@ const About = ({ className }) => {
 };
 
 export default styled(About)`
-  font-size: 14pt;
   line-height: 1.5rem;
   h1 {
     font-family: "Dawning of a New Day", cursive;
     text-align: center;
     text-shadow: 2px 2px 3px #ddd;
+    font-size: 4rem;
   }
+
   .container {
     img {
       width: 100%;
@@ -93,23 +79,7 @@ export default styled(About)`
   }
 
   .links {
-    // font-family: "Dawning of a New Day", cursive;
-    margin-top: 4rem;
+    margin-top: 3rem;
     text-align: center;
-    
-    a {
-      font-size: 24px;
-      color: #ccc;
-      transition: all 0.2s;
-
-
-      :hover {
-        color: rgb(156, 39, 176);
-      }
-    }
-  }
-
-  .links * {
-    padding: 0 10px 0 10px;
   }
 `;

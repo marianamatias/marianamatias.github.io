@@ -17,7 +17,7 @@ import Menu from "./components/Menu";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function App({ className }) {
+function App({ className, match }) {
   return (
     <div className={className}>
       <ToastContainer />
@@ -39,6 +39,7 @@ function App({ className }) {
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={Projects} />
+            {/* <Route path={match.url + "/:id"} /> */}
             {ProjectRoutes}
             <Route exact path="/resume" component={Resume} />
             <Route path="*" component={ErrorPage} status={404} />

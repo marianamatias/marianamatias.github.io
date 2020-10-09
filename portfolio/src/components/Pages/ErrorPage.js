@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../Button";
@@ -8,7 +8,6 @@ const ErrorPage = ({ className }) => {
 
   return (
     <div className={className}>
-      {/* <h1>This page does not exist :(</h1> */}
       <a
         href="https://www.renemagritte.org/the-treachery-of-images.jsp"
         rel="noopener noreferrer"

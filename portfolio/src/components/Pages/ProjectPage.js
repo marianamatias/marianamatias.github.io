@@ -1,29 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProjectPage = ({ className, match }) => {
+const ProjectPage = ({ className, children }) => {
   return (
     <div className={className}>
-      <h1>{match.params.projectId}</h1>
-      <h3>Organization</h3>
-      <p>Short description</p>
-
-      {/* Situation, what is the problem? */}
-      <h1>Challenge</h1>
-
-      {/* Personal goals */}
-      <h1>Opportunity</h1>
-
-      {/* Personal growth */}
-      <h1>Value Delivered</h1>
-
-      {/* Final product */}
-      <h1>Outcome</h1>
-
-      {/* Personal growth */}
-      <h1>Lessons Learned</h1>
+      {children} <h3 class="signature">-Mariana Matias</h3>
     </div>
   );
 };
 
-export default styled(ProjectPage)``;
+export default styled(ProjectPage)`
+  max-width: 800px;
+  margin: auto;
+  h2 {
+    font-size: 2rem;
+  }
+  .signature {
+    font-family: "Dawning of a New Day", cursive;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #ccc;
+  }
+`;

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Tag from "./Tag";
+import TagGroup from "./TagGroup";
 
 const ProjectTile = ({ title, description, tags, className }) => {
   return (
@@ -12,9 +13,7 @@ const ProjectTile = ({ title, description, tags, className }) => {
           <h3>{title}</h3>
         </Link>
         <p>{description}</p>
-        <div className="tags">
-          {tags && tags.map((tag, i) => <Tag key={i} tag={tag}></Tag>)}
-        </div>
+        {tags && <TagGroup tags={tags} />}
       </div>
     </div>
   );
@@ -26,7 +25,7 @@ export default styled(ProjectTile)`
   transition: all 0.3s;
   max-width: 400px;
   margin: 1rem;
-  
+
   a {
     font-size: 18px;
     color: black;
@@ -44,18 +43,13 @@ export default styled(ProjectTile)`
   .text {
     padding: 10px;
     background: white;
-    
+
     .title {
       text-decoration: underline;
       h3 {
         margin: 0;
       }
     }
-  }
-
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   :hover {
