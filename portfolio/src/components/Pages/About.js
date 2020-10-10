@@ -65,6 +65,9 @@ export default styled(About)`
   }
 
   .container {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-column-gap: 2rem;
     img {
       width: 100%;
       box-shadow: 6px 10px;
@@ -73,13 +76,17 @@ export default styled(About)`
         box-shadow: 10px 15px;
       }
     }
-    display: grid;
-    grid-template-columns: 40% auto;
-    grid-column-gap: 2rem;
   }
 
   .links {
     margin-top: 3rem;
     text-align: center;
+  }
+
+  @media screen and (max-width: 992px) {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 `;

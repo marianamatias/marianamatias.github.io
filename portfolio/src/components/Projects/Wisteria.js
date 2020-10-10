@@ -63,21 +63,17 @@ const Wisteria = ({ className, match }) => {
         <br />
 
         <h2>Game Plan</h2>
-        <p>
-          <ol>
-            <li>
-              Get up to speed on the project concept, goals, and research.
-            </li>
-            <li>
-              Build on the existing UX designs to create the best version before
-              development began.
-            </li>
-            <li>
-              Get familiar with the new programming language and framework we
-              decided to use: Dart and Flutter.
-            </li>
-          </ol>
-        </p>
+        <ol>
+          <li>Get up to speed on the project concept, goals, and research.</li>
+          <li>
+            Build on the existing UX designs to create the best version before
+            development began.
+          </li>
+          <li>
+            Get familiar with the new programming language and framework we
+            decided to use: Dart and Flutter.
+          </li>
+        </ol>
         <br />
 
         <h2>Value Added</h2>
@@ -188,22 +184,19 @@ const Wisteria = ({ className, match }) => {
           </a>{" "}
           because:
         </p>
-        <p>
-          <ul>
-            <li>
-              Flutter has its custom implementation for the UI, which gives us
-              greater control and flexibility on the UI
-            </li>
-            <li>
-              Flutter has its own UI components (widgets) and doesn't rely on as
-              many third party libraries for this as React Native
-            </li>
-            <li>
-              We were excited to learn a new technology to add to our
-              repertoire!
-            </li>
-          </ul>
-        </p>
+        <ul>
+          <li>
+            Flutter has its custom implementation for the UI, which gives us
+            greater control and flexibility on the UI
+          </li>
+          <li>
+            Flutter has its own UI components (widgets) and doesn't rely on as
+            many third party libraries for this as React Native
+          </li>
+          <li>
+            We were excited to learn a new technology to add to our repertoire!
+          </li>
+        </ul>
         <p>
           After this decision, I took advantage of the beginning of the semester
           to get a head-start on learning Flutter because I wanted to be

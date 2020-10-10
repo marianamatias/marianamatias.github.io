@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ProjectPage = ({ className, children }) => {
   return (
     <div className={className}>
-      {children} <h3 class="signature">-Mariana Matias</h3>
+      {children} <h3 className="signature">-Mariana Matias</h3>
     </div>
   );
 };

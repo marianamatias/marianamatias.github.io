@@ -21,7 +21,7 @@ const ProjectHeader = ({
           {dates}
         </p>
       </div>{" "}
-      <p className="tools">
+      <div className="tools">
         {toolTags && (
           <div className="flex">
             <strong>Tools</strong>:
@@ -42,7 +42,7 @@ const ProjectHeader = ({
             </a>{" "}
           </span>
         )}
-      </p>
+      </div>
     </div>
   );
 };
@@ -64,5 +64,12 @@ export default styled(ProjectHeader)`
     padding-bottom: 0.5rem;
     display: flex;
     align-items: center;
+    font-family: "Karla", serif;
+  }
+
+  @media screen and (max-width: 600px) {
+    .flex {
+      display: inline;
+    }
   }
 `;

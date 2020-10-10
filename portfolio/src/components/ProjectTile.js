@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Tag from "./Tag";
 import TagGroup from "./TagGroup";
 
 const ProjectTile = ({ title, description, tags, className }) => {

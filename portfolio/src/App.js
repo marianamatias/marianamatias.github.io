@@ -1,11 +1,6 @@
 import React from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { Switch, Route, NavLink, HashRouter } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./components/Pages/Home";
 import ErrorPage from "./components/Pages/ErrorPage";
@@ -22,7 +17,7 @@ function App({ className, match }) {
     <div className={className}>
       <ToastContainer />
 
-      <Router>
+      <HashRouter>
         <div>
           <Menu className="menu">
             <NavLink exact to="/" activeClassName="active">
@@ -45,7 +40,7 @@ function App({ className, match }) {
             <Route path="*" component={ErrorPage} status={404} />
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
