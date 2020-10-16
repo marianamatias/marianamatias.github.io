@@ -11,10 +11,16 @@ const Projects = ({ className, match }) => {
 
   const fetchProjectTitles = async () => {
     axios
-      .get(`${process.env.REACT_APP_API}/projectTiles/`)
+      .get(`${process.env.REACT_APP_API}/projectTiles/`, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
+      // .get(`http://localhost:5000/api/projectTiles/`)
       .then((res) => res.data)
       .then((response) => {
-        setProjects(response);
+        setProjects(response.projectTiles);
+        console.log(response.projectTiles);
       })
       .catch((err) => {
         toast.error("Unable to load projects");
@@ -24,7 +30,7 @@ const Projects = ({ className, match }) => {
   };
 
   useEffect(() => {
-    fetchProjectTitles();
+    setProjects(fetchProjectTitles().projectTiles);
   }, []);
 
   return (

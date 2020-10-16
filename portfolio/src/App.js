@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Switch, Route, NavLink, HashRouter } from "react-router-dom";
+import { Switch, Route, NavLink, BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./components/Pages/Home";
 import ErrorPage from "./components/Pages/ErrorPage";
@@ -17,7 +17,7 @@ function App({ className, match }) {
     <div className={className}>
       <ToastContainer />
 
-      <HashRouter>
+      <BrowserRouter>
         <div>
           <Menu className="menu">
             <NavLink exact to="/" activeClassName="active">
@@ -40,7 +40,7 @@ function App({ className, match }) {
             <Route path="*" component={ErrorPage} status={404} />
           </Switch>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
