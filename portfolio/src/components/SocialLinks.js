@@ -33,8 +33,11 @@ const SocialLinks = ({ className }) => {
 };
 
 export default styled(SocialLinks)`
-  text-align: center;
-
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 2rem;
   a {
     color: #444;
     font-size: 24px;
@@ -45,6 +48,6 @@ export default styled(SocialLinks)`
   }
 
   * {
-    padding: 0 10px 0 10px;
+    padding: 0 0 20px 0;
   }
 `;
