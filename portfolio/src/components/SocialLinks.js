@@ -34,10 +34,11 @@ const SocialLinks = ({ className }) => {
 
 export default styled(SocialLinks)`
   text-align: center;
+  margin-top: 2rem;
 
   a {
     color: #444;
-    font-size: 24px;
+    font-size: 2rem;
     transition: all 0.2s;
     :hover {
       color: #f80081;
