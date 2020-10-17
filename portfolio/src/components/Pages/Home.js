@@ -8,7 +8,7 @@ const Home = ({ className }) => {
       <div className="info">
         <h1>Mariana Matias</h1>
         <p>Front End Developer & UX Designer</p>
-        <p>Georgia Tech Computer Science</p>
+        <p>Computer Science @ Georgia Tech</p>
         <SocialLinks />
       </div>
     </div>

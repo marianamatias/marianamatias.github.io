@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import Skeleton from "react-loading-skeleton";
 import styled from "styled-components";
 
 const About = ({ className }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <div className={className}>
       <h1>Olá! Salut! Hey!</h1>
       <div className="container">
-        <img src={require("../../assets/images/lisboa.jpg")} alt="mariana" />
+        <img
+          src={require("../../assets/images/lisboa.jpg")}
+          alt="mariana"
+          className={imageLoaded ? "visible" : "hidden"}
+          onLoad={() => setImageLoaded(true)}
+        />
+        {!imageLoaded && <Skeleton height={400} />}
         <div className="text">
           <p>
             I'm Mariana and I'm studying Computer Science @ Georgia Tech. In my
@@ -56,6 +65,14 @@ export default styled(About)`
   h1 {
     text-align: center;
     font-size: 3rem;
+  }
+  .visible {
+    visibility: visible;
+  }
+
+  .hidden {
+    visibility: hidden;
+    display: none;
   }
 
   .container {

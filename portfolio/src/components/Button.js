@@ -10,6 +10,7 @@ const Button = ({ className, onClick, children }) => {
 };
 
 export default styled(Button)`
+  cursor: pointer;
   display: inline-block;
   padding: 1rem 2rem;
   margin: 0 0.3em 0.3em 0;
@@ -18,7 +19,7 @@ export default styled(Button)`
   text-decoration: none;
   font-weight: 800;
   color: #ffffff;
-  background-color: #04c4de;
+  background-color: #ff3b00;
   box-shadow: inset 0 -0.8em 0 -0.35em rgba(0, 0, 0, 0.17);
   text-align: center;
   position: relative;
