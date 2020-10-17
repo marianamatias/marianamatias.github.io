@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Home from "./components/Pages/Home";
 import ErrorPage from "./components/Pages/ErrorPage";
 import About from "./components/Pages/About";
-import Resume from "./components/Pages/Resume";
 import Projects from "./components/Pages/Projects";
 import ProjectRoutes from "./components/Projects/ProjectRoutes";
 import Menu from "./components/Menu";
@@ -34,10 +33,8 @@ function App({ className, match }) {
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
             <Route exact path="/projects" component={Projects} />
-            {/* <Route path={match.url + "/:id"} /> */}
             {ProjectRoutes}
-            <Route exact path="/resume" component={Resume} />
-            <Route path="*" component={ErrorPage} status={404} />
+            <Route path="" component={ErrorPage} />
           </Switch>
         </div>
       </BrowserRouter>

@@ -12,6 +12,7 @@ const Wisteria = ({ className, match }) => {
           title="Wisteria"
           location="Computer Science Capstone"
           dates="Aug 2020 - Nov 2020"
+          design="https://www.figma.com/file/L7IolyzOXeE42D54CJaLy8/Wisteria"
           toolTags={[
             {
               text: "Flutter SDK",
@@ -92,7 +93,7 @@ const Wisteria = ({ className, match }) => {
           <strong>
             {" "}
             See the wireframes on Figma{" "}
-            <a href="https://www.figma.com/file/sPxsDfIayE3NZxzITGZE1C/Digital-Trading-Cards?node-id=10%3A2">
+            <a href="https://www.figma.com/file/L7IolyzOXeE42D54CJaLy8/Wisteria">
               <mark>here </mark>
             </a>
             . These are some improvements I made:
@@ -253,7 +254,8 @@ export default styled(Wisteria)`
       margin-top: 4rem;
     }
     img {
-      height: 400px;
+      // height: 400px;
+      width: 100%;
     }
   }
 `;

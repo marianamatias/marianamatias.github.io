@@ -6,7 +6,10 @@ import TagGroup from "./TagGroup";
 const ProjectTile = ({ title, description, tags, className }) => {
   return (
     <div className={className}>
-      <img src={require(`../assets/images/${title}.png`)} alt="project" />
+      <img
+        src={require(`../assets/images/ProjectTiles/${title}.png`)}
+        alt="project"
+      />
       <div className="text">
         <Link className="title" to={`/projects/${title}`}>
           <h3>{title}</h3>
@@ -19,6 +22,7 @@ const ProjectTile = ({ title, description, tags, className }) => {
 };
 
 export default styled(ProjectTile)`
+  border-radius: 0.15em;
   border: 1px solid;
   box-shadow: 6px 10px;
   transition: all 0.3s;
@@ -34,6 +38,7 @@ export default styled(ProjectTile)`
   }
 
   img {
+    border-radius: 0.15em 0.15em 0 0;
     width: 100%;
     height: 170px;
     object-fit: cover;
@@ -41,7 +46,6 @@ export default styled(ProjectTile)`
 
   .text {
     padding: 10px;
-    background: white;
 
     .title {
       text-decoration: underline;

@@ -10,14 +10,22 @@ const Button = ({ className, onClick, children }) => {
 };
 
 export default styled(Button)`
+  display: inline-block;
   padding: 1rem 2rem;
-  border: 1px solid;
-  box-shadow: 4px 7px;
-  transition: all 0.3s;
-  :hover {
-    box-shadow: 6px 9px;
-  }
-  font-weight: 600;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 800;
+  color: #ffffff;
   background-color: #04c4de;
-  cursor: pointer;
+  box-shadow: inset 0 -0.8em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-align: center;
+  position: relative;
+  border: none;
+
+  :active {
+     top: 0.2em;
+     box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  }
 `;

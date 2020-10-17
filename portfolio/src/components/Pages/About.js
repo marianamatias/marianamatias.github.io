@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import SocialLinks from "../SocialLinks";
 
 const About = ({ className }) => {
   return (
     <div className={className}>
       <h1>Olá! Salut! Hey!</h1>
       <div className="container">
-        <div>
-          <img src={require("../../assets/images/lisboa.jpg")} alt="mariana" />
-        </div>
+        <img src={require("../../assets/images/lisboa.jpg")} alt="mariana" />
         <div className="text">
           <p>
-            I'm Mariana and I'm studying Computer Science & HCI @ Georgia Tech.
-            In my past internships and projects, I've taken on roles as a
-            front-end developer and UX designer. I'm interested in the
-            intersection between development and design and I love bringing
-            wireframes to life!
+            I'm Mariana and I'm studying Computer Science @ Georgia Tech. In my
+            past internships and projects, I've taken on roles as a front-end
+            developer and UX designer. I love exploring the intersection between
+            development and design - from bringing wireframes alive to having
+            fun with creative computing!
           </p>
           <p>
-            Since I'm graduating soon (this December 2020!), I'm currently
-            looking for full-time roles as a UX engineer or a similar position.
+            <strong>
+              Since I'm graduating soon (this December 2020!), I'm currently
+              looking for full-time roles as a UX engineer or a similar
+              position.{" "}
+            </strong>
             My professional goal is to use my programming skills and technical
             knowledge to improve the access to quality education.
           </p>
@@ -35,7 +35,7 @@ const About = ({ className }) => {
             <span role="img" aria-label="br">
               🇧🇷
             </span>
-            , and I'm nowhere near done going abroad!
+            , and I'm just getting started!
           </p>
           {/* <p>
             In terms of personal development, I'm really excited to be learning
@@ -44,11 +44,7 @@ const About = ({ className }) => {
             background with predictive modeling to create great digital
             products!
           </p> */}
-
-          <div className="links">
-            <h3 className="connect">Soyons amis!</h3>
-            <SocialLinks />
-          </div>
+          <p className="signature">-Mariana Matias</p>
         </div>
       </div>
     </div>
@@ -58,10 +54,8 @@ const About = ({ className }) => {
 export default styled(About)`
   line-height: 1.5rem;
   h1 {
-    font-family: "Dawning of a New Day", cursive;
     text-align: center;
-    text-shadow: 2px 2px 3px #ddd;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .container {
@@ -69,6 +63,7 @@ export default styled(About)`
     grid-template-columns: 40% auto;
     grid-column-gap: 2rem;
     img {
+      border-radius: 0.15em;
       width: 100%;
       box-shadow: 6px 10px;
       transition: all 0.3s;
@@ -77,12 +72,11 @@ export default styled(About)`
       }
     }
   }
-
-  .links {
-    margin-top: 3rem;
-    text-align: center;
+  .signature {
+    font-family: "Dawning of a New Day", cursive;
+    font-size: 2rem;
+    font-weight: bold;
   }
-
   @media screen and (max-width: 992px) {
     .container {
       display: flex;

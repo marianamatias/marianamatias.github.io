@@ -26,7 +26,7 @@ export default styled(Home)`
 
     h1 {
       font-family: "Dawning of a New Day", cursive;
-      font-size: 7rem;
+      font-size: 8rem;
       text-shadow: 2px 2px 5px #ccc;
       margin: 0rem;
       font-weight: 800;

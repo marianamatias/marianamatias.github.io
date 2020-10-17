@@ -11,11 +11,14 @@ const Projects = ({ className, match }) => {
 
   const fetchProjectTitles = async () => {
     axios
-      .get(`${process.env.REACT_APP_API}/projectTiles/`, {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
-      })
+      .get(
+        `https://cors-anywhere.herokuapp.com/${process.env.REACT_APP_API}/projectTiles/`,
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      )
       // .get(`http://localhost:5000/api/projectTiles/`)
       .then((res) => res.data)
       .then((response) => {
@@ -38,7 +41,7 @@ const Projects = ({ className, match }) => {
       <h1>Projects</h1>
       {loading && (
         <div className="projects-grid">
-          {[...Array(3)].map((e, i) => (
+          {[...Array(4)].map((e, i) => (
             <div className="box" key={i}>
               <Skeleton height={120} />
               <div className="bottom-box">
@@ -66,6 +69,11 @@ const Projects = ({ className, match }) => {
 };
 
 export default styled(Projects)`
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
   .box {
     border-radius: 7px;
     border-bottom: solid 1px #f1f1f1;
@@ -79,7 +87,7 @@ export default styled(Projects)`
 
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
   }

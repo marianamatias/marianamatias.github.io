@@ -40,7 +40,7 @@ export default styled(SocialLinks)`
     font-size: 24px;
     transition: all 0.2s;
     :hover {
-      color: #F80081;
+      color: #f80081;
     }
   }
 

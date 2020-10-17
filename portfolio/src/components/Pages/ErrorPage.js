@@ -8,23 +8,13 @@ const ErrorPage = ({ className }) => {
 
   return (
     <div className={className}>
-      <a
-        href="https://www.renemagritte.org/the-treachery-of-images.jsp"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <h1>Ceci n'est pas une page 404</h1>
-      </a>
+      <h1>Ceci n'est pas une page 404</h1>
       <Button onClick={() => history.push("/")}>Go back to Home</Button>
     </div>
   );
 };
 
 export default styled(ErrorPage)`
-  a {
-    color: black;
-    text-decoration: none;
-  }
   h1 {
     font-family: "Dawning of a New Day", cursive;
     font-size: 5rem;

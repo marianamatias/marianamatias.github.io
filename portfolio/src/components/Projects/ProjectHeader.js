@@ -8,6 +8,8 @@ const ProjectHeader = ({
   location,
   dates,
   repo,
+  video,
+  design,
   toolTags,
   conceptTags,
 }) => {
@@ -36,10 +38,32 @@ const ProjectHeader = ({
         )}
         {repo && (
           <span>
-            <strong>GitHub Repository</strong>:{" "}
+            Check out the{" "}
             <a href={repo}>
-              <mark>{repo}</mark>
+              <strong>
+                <mark>GitHub repo.</mark>
+              </strong>
             </a>{" "}
+          </span>
+        )}
+        {video && (
+          <span>
+            Watch the{" "}
+            <strong>
+              <a href={video}>
+                <mark>video.</mark>
+              </a>{" "}
+            </strong>
+          </span>
+        )}
+        {design && (
+          <span>
+            Explore the{" "}
+            <strong>
+              <a href={design}>
+                <mark>design.</mark>
+              </a>{" "}
+            </strong>
           </span>
         )}
       </div>
@@ -60,6 +84,10 @@ export default styled(ProjectHeader)`
     }
   }
 
+  .tools {
+    font-family: karla;
+  }
+
   .flex {
     padding-bottom: 0.5rem;
     display: flex;
@@ -70,6 +98,11 @@ export default styled(ProjectHeader)`
   @media screen and (max-width: 600px) {
     .flex {
       display: inline;
+    }
+    .tools {
+      * {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 `;

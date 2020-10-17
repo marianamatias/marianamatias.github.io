@@ -24,7 +24,7 @@ export default styled(Menu)`
   p {
     font-family: "Dawning of a New Day", cursive;
   }
-  
+
   nav {
     margin: auto;
     width: 1000px;
