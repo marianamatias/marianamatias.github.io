@@ -1,41 +1,32 @@
 import React from "react";
 import "./App.css";
-import { Switch, Route, NavLink, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./components/Pages/Home";
 import ErrorPage from "./components/Pages/ErrorPage";
 import About from "./components/Pages/About";
 import Projects from "./components/Pages/Projects";
 import ProjectRoutes from "./components/Projects/ProjectRoutes";
-import Menu from "./components/Menu";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MenuWrapper from "./components/MenuWrapper";
 
 function App({ className, match }) {
   return (
     <div className={className}>
       <ToastContainer />
       <BrowserRouter>
-        <div>
-          <Menu className="menu">
-            <NavLink exact to="/" activeClassName="active">
-              Home
-            </NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink exact to="/projects">
-              Projects
-            </NavLink>
-            {/* <NavLink to="/resume">Resume</NavLink> */}
-          </Menu>
-
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/projects" component={Projects} />
-            {ProjectRoutes}
-            <Route path="" component={ErrorPage} />
-          </Switch>
-        </div>
+        <MenuWrapper>
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/projects" component={Projects} />
+              {ProjectRoutes}
+              <Route path="" component={ErrorPage} />
+            </Switch>
+          </div>
+        </MenuWrapper>
       </BrowserRouter>
     </div>
   );

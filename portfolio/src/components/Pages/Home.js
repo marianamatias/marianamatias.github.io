@@ -1,3 +1,5 @@
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import SocialLinks from "../SocialLinks";
@@ -13,11 +15,23 @@ const Home = ({ className }) => {
         </span>
         <SocialLinks />
       </div>
+      <div className="footer">
+        Made with <FontAwesomeIcon icon={faHeart} /> and React.js
+      </div>
     </div>
   );
 };
 
 export default styled(Home)`
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0;
+    color: #B8B8B8;
+  }
   .info {
     position: absolute;
     width: 100%;

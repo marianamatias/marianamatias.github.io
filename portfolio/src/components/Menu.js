@@ -20,6 +20,8 @@ export default styled(Menu)`
   top: 0;
   left: 0;
   right: 0;
+  display: ${(props) =>
+    parseFloat(props.scrollPosition) > 1 ? "none" : "flex"};
 
   p {
     font-family: "Dawning of a New Day", cursive;
