@@ -26,6 +26,12 @@ p {
   font-size: 13pt;
   line-height: 1.5rem;
 }
+
+ul {
+  font-family: "Karla", serif;
+  line-height: 1.5em;
+}
+
 a {
   font-family: "Karla", serif;
 }

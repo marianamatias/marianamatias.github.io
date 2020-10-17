@@ -23,11 +23,9 @@ const Projects = ({ className, match }) => {
       .then((res) => res.data)
       .then((response) => {
         setProjects(response.projectTiles);
-        console.log(response.projectTiles);
       })
       .catch((err) => {
         toast.error("Unable to load projects");
-        console.log(err.message);
       })
       .then(() => setLoading(false));
   };

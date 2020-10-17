@@ -10,7 +10,7 @@ const MyCloset = ({ className, match }) => {
         <ProjectHeader
           title="MyCloset"
           //   title={match.params.projectId}
-          location="Capstone Design"
+          location="Computer Science Capstone"
           dates="Aug 2019 - Dec 2019"
           toolTags={[
             {
