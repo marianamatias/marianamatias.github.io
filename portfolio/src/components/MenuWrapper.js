@@ -12,11 +12,7 @@ const MenuWrapper = ({ children, className }) => {
 
   const scrollProgress = () => {
     const scrollPx = document.documentElement.scrollTop;
-    const winHeightPx =
-      document.documentElement.scrollHeight -
-      document.documentElement.clientHeight;
-    const scrolledAmount = `${(scrollPx / winHeightPx) * 100}%`;
-    setScrolled(scrolledAmount);
+    setScrolled(scrollPx);
   };
 
   return (

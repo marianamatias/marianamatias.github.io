@@ -36,14 +36,20 @@ const About = ({ className }) => {
           <p>
             My biggest passion is a combination of traveling, learning
             languages, and discovering other cultures. I am a huge advocate for
-            the benefits of travel - I've done a few exchanges in France{" "}
-            <span role="img" aria-label="fr">
+            the benefits of travel - I've done a few exchanges in{" "}
+            <a href="https://sites.gatech.edu/ramble-abroad-blog/2018/08/29/why-i-didnt-travel/">
+              <mark>France</mark>
+            </a>{" "}
+            {/* <span role="img" aria-label="fr">
               🇫🇷
-            </span>
-            , I've interned in Brazil{" "}
-            <span role="img" aria-label="br">
+            </span> */}
+            , I've interned in{" "}
+            <a href="https://www.linkedin.com/posts/activity-6700114796425158656-GNy2">
+              <mark>Brazil</mark>
+            </a>{" "}
+            {/* <span role="img" aria-label="br">
               🇧🇷
-            </span>
+            </span> */}
             , and I'm just getting started!
           </p>
           {/* <p>
@@ -79,6 +85,7 @@ export default styled(About)`
     display: grid;
     grid-template-columns: 40% auto;
     grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
     img {
       border-radius: 0.15em;
       width: 100%;
@@ -96,8 +103,12 @@ export default styled(About)`
   }
   @media screen and (max-width: 992px) {
     .container {
-      display: flex;
-      flex-wrap: wrap;
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
     }
   }
 `;

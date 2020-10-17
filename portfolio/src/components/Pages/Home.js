@@ -15,22 +15,31 @@ const Home = ({ className }) => {
         </span>
         <SocialLinks />
       </div>
-      <div className="footer">
+      <p className="footer">
         Made with <FontAwesomeIcon icon={faHeart} /> and React.js
-      </div>
+      </p>
     </div>
   );
 };
 
 export default styled(Home)`
   .footer {
+    font-size: 10pt;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     text-align: center;
     padding: 1rem 0;
-    color: #B8B8B8;
+    color: #b8b8b8;
+
+    svg {
+      transition: all 0.3s;
+      &:hover {
+        color: #f80081;
+        transform: scale(1.3);
+      }
+    }
   }
   .info {
     position: absolute;
@@ -61,6 +70,8 @@ export default styled(Home)`
     @media screen and (max-width: 600px) {
       h1 {
         font-size: 5rem;
+        text-shadow: none;
+        font-weight: normal;
       }
       .description {
         display: none;

@@ -11,9 +11,9 @@ const ProjectPage = ({ className, children }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", scrollProgress);
-    if (!showFAB && window.pageYOffset > 400) {
+    if (!showFAB && window.pageYOffset > 350) {
       setShowFAB(true);
-    } else if (showFAB && window.pageYOffset <= 400) {
+    } else if (showFAB && window.pageYOffset <= 350) {
       setShowFAB(false);
     }
   }, [scrolled, showFAB]);
@@ -35,10 +35,7 @@ const ProjectPage = ({ className, children }) => {
     <div className={className}>
       <ProgressBar width={scrolled} />
       {children}
-      <div
-        className="fab"
-        style={{ visibility: parseFloat(scrolled) > 20 ? "visible" : "hidden" }}
-      >
+      <div className="fab" style={{ display: showFAB ? "flex" : "none" }}>
         <Button onClick={scrollToTop}>
           <FontAwesomeIcon icon={faAngleUp} size="2x" />
         </Button>
@@ -57,7 +54,7 @@ export default styled(ProjectPage)`
     position: fixed;
     bottom: 0;
     right: 0;
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all 0.3s;
 
     ${Button} {

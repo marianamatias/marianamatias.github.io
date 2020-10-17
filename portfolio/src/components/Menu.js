@@ -13,7 +13,7 @@ export default styled(Menu)`
   display: flex;
   justify-content: space-between;
   background: white;
-  opacity: 0.8;
+  // opacity: 0.8;
   width: 100%;
   padding: 1.5rem 1rem;
   position: fixed;
@@ -21,7 +21,9 @@ export default styled(Menu)`
   left: 0;
   right: 0;
   display: ${(props) =>
-    parseFloat(props.scrollPosition) > 1 ? "none" : "flex"};
+    (props.scrollPosition) > 350 ? "none" : "flex"};
+  opacity: ${(props) =>
+    (props.scrollPosition) > 50 ? 0.8 : 1};
 
   p {
     font-family: "Dawning of a New Day", cursive;

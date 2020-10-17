@@ -37,11 +37,14 @@ export default styled(SocialLinks)`
   margin-top: 2rem;
 
   a {
-    color: #555;
-    font-size: 2rem;
-    transition: all 0.2s;
-    :hover {
-      color: #f80081;
+    color: black;
+    font-size: 1.5rem;
+    svg {
+      transition: all 0.2s;
+      &:hover {
+        color: #f80081;
+        transform: scale(1.3);
+      }
     }
   }
 
