@@ -15,7 +15,6 @@ function App({ className, match }) {
   return (
     <div className={className}>
       <ToastContainer />
-
       <BrowserRouter>
         <div>
           <Menu className="menu">

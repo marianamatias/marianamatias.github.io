@@ -88,20 +88,20 @@ const PopLang = ({ className, match }) => {
           Computer Science Course at Georgia Tech (CS1301) to further understand
           how language can influence learning. Our initial survey yielded very
           interesting observations.
-          <ul>
-            <li>
-              For many students, English is not the primary language they used
-              when speaking with family or friends. There was a wide range of
-              languages: Chinese, Creole, Gujarati, Hindi, Kiswahili, Pataw,
-              Spanish, Tamil.
-            </li>
-            <li>
-              Some students incorporate their native languages to their class
-              notes and supplemental resources that they use to review the
-              material.
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            For many students, English is not the primary language they used
+            when speaking with family or friends. There was a wide range of
+            languages: Chinese, Creole, Gujarati, Hindi, Kiswahili, Pataw,
+            Spanish, Tamil.
+          </li>
+          <li>
+            Some students incorporate their native languages to their class
+            notes and supplemental resources that they use to review the
+            material.
+          </li>
+        </ul>
         <img
           className="img-notes"
           src={require("../../assets/images/PopLang/poplang-student-notes.jpeg")}
@@ -206,23 +206,23 @@ const PopLang = ({ className, match }) => {
           were our main findings about the language incorporation into coding
           practice:
         </p>
+        <ol>
+          <li>
+            The classroom setting greatly affected students' attitudes towards
+            using different languages to discuss content, as one student
+            “personally because the test is in English, I take notes in English,
+            communicate about code in English because that’s what I know we will
+            be all tested on.”
+          </li>
+          <li>
+            We found there was a disconnect between the students we thought we
+            were contacting and the students we read about in the literature.
+            When testing with our students, they told us that they were more
+            comfortable discussing code and conversing in English with each
+            other.
+          </li>
+        </ol>
         <p>
-          <ol>
-            <li>
-              The classroom setting greatly affected students' attitudes towards
-              using different languages to discuss content, as one student
-              “personally because the test is in English, I take notes in
-              English, communicate about code in English because that’s what I
-              know we will be all tested on.”
-            </li>
-            <li>
-              We found there was a disconnect between the students we thought we
-              were contacting and the students we read about in the literature.
-              When testing with our students, they told us that they were more
-              comfortable discussing code and conversing in English with each
-              other.
-            </li>
-          </ol>
           One student stated that she felt her level of fluency in her stated
           second language was not sufficient to converse freely with the other
           student on the assignment. This is because she uses her native
