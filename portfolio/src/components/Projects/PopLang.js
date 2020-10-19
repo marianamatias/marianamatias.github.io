@@ -42,52 +42,99 @@ const PopLang = ({ className, match }) => {
         />
         <h2>Background</h2>
         <p>
-          This experience started with the Educational Technology course at
-          Georgia Tech. My team's formation was different from the rest, since
-          we didn't form around a specific project proposal but rather for a
-          true passion for language learning. We were a unique group since each
-          of us spoke 1-2 different languages other than English and none
-          overlapped. While this was one of our greatest challenges to converge
-          on a concept, it was also our greatest strength in terms of the
-          freedom we had to identify for our problem space.
+          During the Educational Technology course at Georgia Tech, I and two
+          other students formed a team out of a common passion: our love for
+          languages. Each one of us spoke 1-2 languages in addition to English,
+          and none the same. At first, we had difficulties agreeing on a
+          specific problem within this space but our excitement to work with
+          language learning kept us motivated!
         </p>
-        <br />
-        <h2>Defining the problem</h2>
-        <h3>Choosing a topic</h3>
+        <h2>The Challenge</h2>
         <p>
-          We began by trying to define the problem we wanted to solve. After
-          many team discussions, guidance from our professor, and restrictions
-          on user testing, we finally found our topic! We wanted to work with
-          the novel practice of translanguaging (when bilingual students use
-          multiple languages to communicate freely).
+          As in a typical double-diamond approach, we first had to explore the
+          problem space in order to accurately define our problem. Our biggest
+          challenge began even before this though because we needed to reduce
+          the problem space itself. The field of language learning is vast and
+          we had difficulties choosing a sub-field as a team. After many
+          discussions and guidance from our professor, we finally found our
+          topic!
+        </p>
+        <p>
+          We were introduced to the novel practice of{" "}
+          <strong>translanguaging</strong> (when multilingual speakers employ
+          the use of their languages when communicating). This is a very natural
+          and common behavior for multilingual speakers (think Spanglish,
+          Franglais, Portuñol). In the context of education, translanguaging is
+          being researched and used as a relatively novel tool to achieve an
+          integrated and enriched classroom experience.
+        </p>
+        <p>
+          After this realization, I proposed another layer of specificity to the
+          project.{" "}
+          <strong>
+            I suggested that we apply translanguaging to computer science
+            education for two reasons
+          </strong>
+          :
+        </p>
+        <ol>
+          <li>
+            I knew we had to narrow down our problem space even further so that
+            we could have a more precise vision of our end users and their
+            needs. Since translingualism is a tool to teach any subject, I
+            believed that we could apply it to an area that all of us were
+            experienced with: Computer Science.
+          </li>
+          <li>
+            Since I started learning to code, I was always intrigued by the
+            specific word choices built into programming languages. I speculated
+            that native English speakers have a clear advantage when learning
+            programming because the languages are essentially written in English
+            (keywords like If else, print, return, string, while). I wanted to
+            test my hypothesis and understand if this caused any significant
+            barrier when learning to program.
+          </li>
+        </ol>
+
+        <p>Once we had a starting point, we began the research phase!</p>
+        <h2>Research</h2>
+        <p>
+          During this first half of the double-diamond approach, we began to
+          research our topic in an attempt to converge on a clear definition of
+          a problem/opportunity.
         </p>
         <h3>Academic Research</h3>
         <p>
-          We needed to learn more about our chosen topic, so we conducted a
-          literature review of translanguaging, bilingual teaching
-          methodologies, and computer science education, we were able to
-          identify the benefits of translanguaging that we would focus on in our
-          project. Specifically, we learned that translanguaging allows
-          multilingual speakers to utilize their full repertoire of languages to
-          communicate more effectively and, when successfully employed in a
-          pedagogical setting, it capitalizes on a group's multilingual ability
-          as a whole to empower students to communicate more fully with each
-          other. It also promotes an inclusive pedagogy, which is shown to
-          increase classroom participation which can be vital to minority groups
-          in the classroom.
-          <br />
-          Moving forward, we chose to focus on translanguaging in Computer
-          Science education, since we reached a consensus that this subject is
-          inherently geared towards English-speaking learners, since the
-          keywords in most programming languages are based on English and many
-          tutorials are also in English.
+          To learn more about translanguaging, we each read countless academic
+          articles and teaching guidelines to find information on multilingual
+          teaching methodologies. We found the following:
         </p>
+
+        <ul>
+          <li>
+            Translanguaging allows multilingual speakers to utilize their full
+            repertoire of languages to communicate more effectively.
+          </li>
+          <li>
+            When successfully employed in a pedagogical setting, translanguaging
+            capitalizes on a group's multilingual ability as a whole to empower
+            students to communicate more fully with each other.
+          </li>
+          <li>
+            Translanguaging promotes an inclusive pedagogy, which is shown to
+            increase classroom participation. As a member of different minority
+            groups, this advantage appealed to me personally.
+          </li>
+        </ul>
+
         <h3>User Research</h3>
         <p>
-          We worked with Teaching Assistants and students in the introductory
-          Computer Science Course at Georgia Tech (CS1301) to further understand
-          how language can influence learning. Our initial survey yielded very
-          interesting observations.
+          To learn more about the current state of CS education, we chose a
+          learning context that was very close to us: the introductory Computer
+          Science Course at Georgia Tech (CS1301). We visited a recitation class
+          to observe the instruction, survey the students, and generally
+          understand how language shows up during learning. The visit yielded
+          very interesting observations:
         </p>
         <ul>
           <li>
@@ -112,13 +159,21 @@ const PopLang = ({ className, match }) => {
           alt=""
         />
 
-        <p>We began brainstorming and ideating soon after these findings!</p>
-
-        <h2>Ideation & Development</h2>
         <p>
-          As a team we focused on sharing our ideas and analyzing them against
+          With this information, we wanted to see how to incorporate different
+          languages into the way CS was being taught and facilitate the natural
+          tendency of multilingual students to use all their languages when
+          learning.
+        </p>
+
+        <h2>Ideation</h2>
+        <p>
+          As a team, we focused on sharing our ideas and analyzing them against
           the research and problem to justify each feature of our proposed
-          design. Here are some example features we came up with in our{" "}
+          design. After two brainstorming sessions, we came up with the idea to
+          create a web-based pair-programming tool that has language-support
+          features built into the modules. Here are some example features we
+          came up with in our{" "}
           <a href="https://www.figma.com/file/LyIqgddeabt8ACcC3SzXid/PopLang?node-id=0%3A1">
             <mark>design</mark>
           </a>
@@ -127,11 +182,10 @@ const PopLang = ({ className, match }) => {
 
         <h3>Live Transcript</h3>
         <p>
-          We wanted to apply translingualism between students of different
-          backgrounds, so we thought of an online coding practice platform that
-          pairs students and develops a transcript of their conversation. This
-          will allow for cross-cultural communication because of integrated
-          language support.
+          To pair students from different backgrounds and still encourage
+          translingualism, the platform will have an option for a live
+          transcript of the conversation between students. This will allow for
+          cross-cultural communication because of integrated language support.
         </p>
         <img
           src={require("../../assets/images/PopLang/poplang-transcript.png")}
@@ -139,11 +193,19 @@ const PopLang = ({ className, match }) => {
         />
         <h3>Suggested Resources</h3>
         <p>
-          According to our research, we found that supplemental topics in both
+          According to my research, I found that supplemental content in both
           native and target languages helped reinforce the material by
-          portraying it in different perspectives. This is why we created a
-          resources section to which students can constantly contribute to
-          empower each other in their learning process.
+          portraying it through different perspectives. After all, language is
+          just the tangible representation of the ideas and thoughts in our
+          heads. As we grow up learning one or more languages, the
+          particularities of those languages shape our mental representations of
+          the world.
+        </p>
+        <p>
+          The supplemental resources are meant to help students find useful
+          sources that can frame the content in a different light. The idea was
+          for students to drive the suggested resources section by constantly
+          contributing to it and empowering each other in the learning process.
         </p>
         <img
           src={require("../../assets/images/PopLang/poplang-resources.png")}
@@ -154,7 +216,8 @@ const PopLang = ({ className, match }) => {
           After feedback from our professor and scaling our ideas down based on
           time restrictions, we began developing!
         </p>
-        <h3>MVP</h3>
+
+        <h2>Prototype</h2>
         <div className="grid">
           <span>
             <p>
@@ -198,12 +261,12 @@ const PopLang = ({ className, match }) => {
           </span>
         </div>
 
-        <h2>Test Implementation and Lessons Learned</h2>
+        <h2>Testing and Lessons Learned</h2>
         <p>
           We tested our learning prototype with two pairs of students. In the
           first session, we paired students of similar backgrounds and in the
-          second session we paired students with different backgrounds. These
-          were our main findings about the language incorporation into coding
+          second session, we paired students with different backgrounds. These
+          were our main findings about language incorporation into coding
           practice:
         </p>
         <ol>
@@ -236,17 +299,26 @@ const PopLang = ({ className, match }) => {
         </p>
         <p>
           Despite these results, our test students expressed to us that they
-          observed students in lecture that spoke in another language and had
-          difficulty asking the right questions in English, as well as groups of
-          students that explain concepts to each other in their native
-          languages. This is where we would start again if we had another
-          iteration of testing.
+          observed students in lectures and recitation that spoke in another
+          language and had difficulty asking the right questions in English.
+          They also mentioned that groups of students that speak the same native
+          language often discuss the concepts with each other in their native
+          languages during recitation.
         </p>
+        <p>
+          I believe that our miscalculations came from two sources: our narrow
+          set of subjects for user research and the time and situational
+          constraints to test the prototype. If we were to have another
+          iteration of testing, I would review the problem definition by
+          interviewing the students mentioned above.
+        </p>
+
+        <h2>Final Presentation</h2>
         <p>
           <a href="https://www.youtube.com/watch?v=KQ0D13wMkHY&feature=youtu.be">
             <mark>Here is our final video presentation</mark>
           </a>{" "}
-          explaining our concept, our test implementation, and our research.
+          explaining our research, our concept, and our test implementation.
         </p>
       </div>
     </ProjectPage>

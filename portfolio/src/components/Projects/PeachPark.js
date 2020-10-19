@@ -30,22 +30,33 @@ const PeachPark = ({ className, match }) => {
         />
         <h2>Background</h2>
         <p>
-          In a team of 5 students, I worked to re-design the Atlanta parking
-          experience while learning about the methods and theories behind
-          Interaction Design. We developed a solution using the double-diamond
-          approach, in which we first defined the problem and then developed a
-          useful tool to answer the problem.
+          With a team of 4 other students, I worked to re-design the Atlanta
+          parking experience while learning all about user research, design
+          thinking, and UI/UX design. We arrived at our final solution through
+          the double-diamond approach by which we first defined the problem and
+          then developed a useful tool to answer the problem.
         </p>
         <img
           src={require("../../assets/images/Peach Park/doublediamond.png")}
           alt="double-diamond"
         />
-        <h2>Opportunity</h2>
+        <h2>The Challenge</h2>
         <p>
           The parking process in Atlanta can be confusing and frustrating, and
-          can even result in monetary fines if completed incorrectly. Our
-          observations, interviews, and surveys on our stakeholders revealed the
-          different pain points in the process:
+          can even result in monetary fines if completed incorrectly. Many of us
+          on the team had experienced unpleasant experiences when parking in
+          Midtown. We knew there was an opportunity to improve the process.
+        </p>
+        <h2>User Research</h2>
+        <p>
+          First, we came up with temporary stakeholder categories to guide our
+          user research (and iterated over them as the project developed
+          further). Our initial stakeholders were: parking meter users, parking
+          app users, and parking authorities.
+        </p>
+        <p>
+          Our observations, interviews, and surveys of our defined stakeholders
+          revealed the different pain points in the process:
         </p>
         <ul>
           <li>
@@ -61,14 +72,50 @@ const PeachPark = ({ className, match }) => {
             and that the meter was physically difficult to use.
           </li>
           <li>
-            For the parking application, users disliked the hidden or unwanted
+            For the parking application, users disliked hidden or unwanted
             service fees. Many also believed that downloading the app was not
             worth the effort compared to simply paying at a parking meter.
           </li>
         </ul>
-
-        <h2>Defining the Problem</h2>
-        <h3>Design Criteria</h3>
+        <h3>Analyzing the data</h3>
+        <p>
+          We used an <strong>affinity diagram</strong> for quantitative analysis
+          of the data we collected. Three main themes emerged: Expertise,
+          Application Drawbacks, and Difficulty.
+        </p>
+        <img
+          src={require("../../assets/images/Peach Park/affinity.JPG")}
+          alt=""
+        />
+        <p>
+          <strong>Expertise</strong> - A subset of users were very familiar with
+          the use of a physical parking meter. They knew how long to park, they
+          knew to take their receipt of payment to the car's dashboard, and they
+          knew how to pay in a quick manner. These users knew to park close to a
+          parking meter and had their license plate already memorized. In
+          addition, they usually take a relatively small amount of completing
+          the parking transaction. The parking process for these people is
+          seamless.
+        </p>
+        <p>
+          <strong>Difficulty</strong> - The majority of users were generally
+          confused about the process for parking meters, citing that the steps
+          to pay for parking were unclear and that the meter was physically
+          difficult to use. Most users did not automatically know at least one
+          of three key pieces of information needed to park their vehicles:
+          parking space number, license plate number, amount of time desired to
+          park. Users were forced to return to their parking spot for this
+          information, and further prolonged the parking payment process. This,
+          combined with difficulty with the physical interface, resulted in
+          general frustration and led many people to ask for help.
+        </p>
+        <p>
+          <strong>App Drawbacks</strong> - Many parkers cited several drawbacks
+          to using the app such as added fees and wasted storage on phones. Many
+          people who do not park frequently believe that downloading the app is
+          not worth the effort compared to simply paying at a parking meter.
+        </p>
+        <h2>Design Criteria</h2>
         <p>
           <strong>Timeliness:</strong>The new solution will allow users to
           minimize the time spent on a parking transaction by removing
@@ -87,24 +134,81 @@ const PeachPark = ({ className, match }) => {
           a mobile device.
         </p>
         <p>
-          <strong>Small Learning Curve:</strong>New users will easily and
+          <strong>Small Learning Curve:</strong> New users will easily and
           quickly learn how to park correctly with the new process.
         </p>
-        <h2>Proposed Solution</h2>
-        <h3>Automatic Sensor</h3>
+        <h2>Designing</h2>
+        <h3>Brainstorming</h3>
         <p>
-          We then had a brainstorming session to reach the peak of the second
-          diamond and explore the solution space. We converged on an idea by
-          analyzing our proposals based on our design criteria.
+          Now in the second phase of the double diamond, we began the divergent
+          process of ideation. Following tips from{" "}
+          <a href="https://www.ideou.com/pages/brainstorming-rules-and-techniques">
+            <mark>IDEO's brainstorming process</mark>
+          </a>
+          , we brainstormed over 100 ideas. We converged on 3 possible solutions
+          by grouping similar ideas and analyzing the groups based on our design
+          criteria. They are represented by the following{" "}
+          <strong>static sketches</strong> and
+          <strong>storyboards</strong>.
         </p>
         <p>
-          Our solution attempts to streamline and standardize this process by
-          converging all users into one system and allowing a seemingly
-          contactless parking experience. The user will be able to park at a
-          location of their choice and be notified when they are being charged,
-          implemented by traffic camera technology that will scan license
-          plates. This solution will require drivers to register their license
-          plate number with the system when they register their car.
+          <strong>Prepaid Card</strong> - Like in other countries, we proposed a
+          single card that could combine different sources of transportation in
+          Atlanta into one monetary system.
+        </p>
+        <div className="flex">
+          <img
+            src={require("../../assets/images/Peach Park/Card1.png")}
+            alt=""
+          />
+          <img
+            src={require("../../assets/images/Peach Park/Card2.png")}
+            alt=""
+          />
+        </div>
+        <p>
+          <strong>Synchronized System</strong> - Combining the app and the
+          parking meter into one system. Users can use the app or mobile website
+          on their phones, or they can use a digital parking meter that displays
+          the same website.
+        </p>
+        <div className="flex">
+          <img
+            src={require("../../assets/images/Peach Park/Sync1.png")}
+            alt=""
+          />
+          <img
+            src={require("../../assets/images/Peach Park/Sync2.png")}
+            alt=""
+          />
+        </div>
+        <p>
+          <strong>Automatic Sensor</strong> - Parking is done through a
+          frictionless system using cameras to scan license plates and charge
+          people based on the detected time the car is parked.
+        </p>
+        <div className="flex">
+          <img
+            src={require("../../assets/images/Peach Park/Sensor1.png")}
+            alt=""
+          />
+          <img
+            src={require("../../assets/images/Peach Park/Sensor2.png")}
+            alt=""
+          />
+        </div>
+        <h2>Solution</h2>
+        <p>
+          We presented our proposals to the other teams in our class as well as
+          the instructors. After feedback on the ideas, we decided to choose the
+          Automatic Sensor with modifications. The solution combines attempts to
+          streamline and standardize the parking process by converging all users
+          into one system and allowing a seemingly <strong>frictionless</strong>{" "}
+          parking experience. The user will be able to park at a location of
+          their choice and be notified when they are being charged, implemented
+          by traffic camera technology that will scan license plates. This
+          solution will require drivers to register their license plate with the
+          system when they register their car or first park.
         </p>
         <p>
           In addition, this will also streamline the traffic authorities'
@@ -113,43 +217,42 @@ const PeachPark = ({ className, match }) => {
           license plate number.
         </p>
         <img
-          src={require("../../assets/images/Peach Park/camera-diagram.png")}
-          alt="double-diamond"
+          src={require("../../assets/images/Peach Park/park-diagram.png")}
+          alt=""
         />
         <p>
           In the sketch above, we can see how the automatic sensor detects the
           license plate as the parking meter user is in the process of parking.
           While parking the car, a green light will appear to signal the
           successful detection of the license plate. If the license plate was
-          not detected, a red light will appear. On the sketch, we can also see
-          a sign which will give details to the parking meter user on how to
-          park, the rate of parking, and how the automatic sensor works.
+          not detected, a red light will appear.
         </p>
-        <img
-          src={require("../../assets/images/Peach Park/park-diagram.png")}
-          alt="double-diamond"
-        />
         <p>
-          In the figure above, we can see an example of the type of information
-          that would be on the sign explaining the system to new users. It
-          explains to users how to wait for the camera to read the license plate
-          when parking and to wait for the green light to continue. It also
-          explains that users will receive an email notification after parking.
+          We made a <strong>video prototype</strong> to explain our idea and its
+          benefits to stakeholders.
         </p>
-        <h2>Testing & Analysis</h2>
+        <div className="video">
+          <iframe
+            title="Video Prototype"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/PB70AgE5hGk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h2>Testing</h2>
         <p>
           We analyzed the effectiveness of our idea with a focus group as well
-          as a think aloud based on our stakeholder type.
+          as a think-aloud based on our stakeholder type.
         </p>
         <h3>Vehicle Owners - Focus Group</h3>
         <p>
-          We decided to do a focus group since our{" "}
-          <a href="https://youtu.be/PB70AgE5hGk">
-            <mark>video prototype</mark>
-          </a>{" "}
-          was a more holistic way of communicating to the stakeholder what our
-          solution's process was going to be like from their perspective and
-          have a conversation about their impressions.
+          We decided to do a focus group since our video prototype was a more
+          holistic way of communicating to the stakeholder what our solution's
+          process was going to be like from their perspective and have a
+          conversation about their impressions.
         </p>
         <p>
           From an analysis of our focus group, there are two main changes that
@@ -168,8 +271,8 @@ const PeachPark = ({ className, match }) => {
         </p>
         <h3>Parking Authority - Think Aloud</h3>
         <p>
-          For this stakeholder category, we conducted a think aloud with a paper
-          prototype which would allow the user to interact with our idea to
+          For this stakeholder category, we conducted a think-aloud with a paper
+          prototype that would allow the user to interact with our idea to
           complete the benchmark tasks we were interested in evaluating.
         </p>
         <p>
@@ -185,4 +288,32 @@ const PeachPark = ({ className, match }) => {
   );
 };
 
-export default styled(PeachPark)``;
+export default styled(PeachPark)`
+  .video {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+
+    iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  .flex {
+    img {
+      border: 1px solid #717171;
+    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+  }
+`;
