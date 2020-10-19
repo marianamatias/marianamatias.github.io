@@ -7,7 +7,7 @@ const PeachPark = ({ className, match }) => {
   return (
     <ProjectPage>
       <div className={className}>
-        <ProjectHeader
+      <ProjectHeader
           title="PeachPark"
           //   title={match.params.projectId}
           location="User Interface Design"
@@ -15,11 +15,11 @@ const PeachPark = ({ className, match }) => {
           video="https://youtu.be/PB70AgE5hGk"
           conceptTags={[
             {
-              text: "Principles of Interaction Design",
+              text: "Interaction Design",
               type: "concept",
             },
             {
-              text: "UX Research",
+              text: "User Research",
               type: "concept",
             },
             {
@@ -156,7 +156,7 @@ const PeachPark = ({ className, match }) => {
           single card that could combine different sources of transportation in
           Atlanta into one monetary system.
         </p>
-        <div className="flex">
+        <div className="prototypes">
           <img
             src={require("../../assets/images/Peach Park/Card1.png")}
             alt=""
@@ -172,7 +172,7 @@ const PeachPark = ({ className, match }) => {
           on their phones, or they can use a digital parking meter that displays
           the same website.
         </p>
-        <div className="flex">
+        <div className="prototypes">
           <img
             src={require("../../assets/images/Peach Park/Sync1.png")}
             alt=""
@@ -187,7 +187,7 @@ const PeachPark = ({ className, match }) => {
           frictionless system using cameras to scan license plates and charge
           people based on the detected time the car is parked.
         </p>
-        <div className="flex">
+        <div className="prototypes">
           <img
             src={require("../../assets/images/Peach Park/Sensor1.png")}
             alt=""
@@ -237,9 +237,9 @@ const PeachPark = ({ className, match }) => {
             width="560"
             height="315"
             src="https://www.youtube.com/embed/PB70AgE5hGk"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <h2>Testing</h2>
@@ -304,7 +304,7 @@ export default styled(PeachPark)`
     }
   }
 
-  .flex {
+  .prototypes {
     img {
       border: 1px solid #717171;
     }
