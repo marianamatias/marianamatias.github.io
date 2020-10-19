@@ -47,7 +47,7 @@ const Wisteria = ({ className, match }) => {
           characteristics, job experience, and personality to build more
           meaningful professional networks.
         </p>
-        <br />
+
         <h2>Challenge</h2>
         <p>
           For the technical portion of my capstone class, I joined a group
@@ -61,7 +61,6 @@ const Wisteria = ({ className, match }) => {
           design skills and applying my knowledge about UX engineering to the
           project.
         </p>
-        <br />
 
         <h2>Game Plan</h2>
         <ol>
@@ -75,7 +74,6 @@ const Wisteria = ({ className, match }) => {
             decided to use: Dart and Flutter.
           </li>
         </ol>
-        <br />
 
         <h2>Value Added</h2>
         <p>
@@ -119,7 +117,6 @@ const Wisteria = ({ className, match }) => {
             of a trading card or business card.
           </p>
           <img src={require("../../assets/images/Wisteria/1.png")} alt="" />
-          <br />
           <h3>Create Digital Trading Card</h3>
           <p>
             <i>
@@ -135,7 +132,6 @@ const Wisteria = ({ className, match }) => {
           </p>
           <img src={require("../../assets/images/Wisteria/2.png")} alt="" />
 
-          <br />
           <h3>Add a Trading Card</h3>
           <p>
             <i>
@@ -149,7 +145,6 @@ const Wisteria = ({ className, match }) => {
           <img src={require("../../assets/images/Wisteria/3.png")} alt="" />
           <img src={require("../../assets/images/Wisteria/4.png")} alt="" />
           <img src={require("../../assets/images/Wisteria/5.png")} alt="" />
-          <br />
           <h3>Saved Cards</h3>
           <p>
             <i>
@@ -163,7 +158,6 @@ const Wisteria = ({ className, match }) => {
           </p>
           <img src={require("../../assets/images/Wisteria/6.png")} alt="" />
         </div>
-        <br />
 
         <h2>Development</h2>
         <p>
@@ -223,7 +217,6 @@ const Wisteria = ({ className, match }) => {
           creating new issues so that we could keep a consistent and organized
           format across our project board.
         </p>
-        <br />
         <h2>Final Thoughts</h2>
         <p>
           Throughout the process, I realized that my previous front end

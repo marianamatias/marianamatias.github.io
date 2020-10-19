@@ -68,7 +68,14 @@ export default styled(ProjectPage)`
 
   h2 {
     font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
   }
+
+  h3 {
+    margin-top: 3rem;
+  }
+
   img {
     width: 100%;
   }
