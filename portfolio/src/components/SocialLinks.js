@@ -7,6 +7,7 @@ import styled from "styled-components";
 const SocialLinks = ({ className }) => {
   return (
     <div className={className}>
+      <p>Stay in touch :)</p>
       <a
         href="https://www.linkedin.com/in/marimatias/"
         rel="noopener noreferrer"
@@ -40,10 +41,10 @@ export default styled(SocialLinks)`
     color: black;
     font-size: 1.5rem;
     svg {
-      transition: all 0.2s;
+      transition: all 0.3s;
       &:hover {
         color: #f80081;
-        transform: scale(1.3);
+        transform: scale(1.2);
       }
     }
   }

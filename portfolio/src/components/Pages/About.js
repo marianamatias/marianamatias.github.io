@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import styled from "styled-components";
+import SocialLinks from "../SocialLinks";
 
 const About = ({ className }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -52,6 +53,7 @@ const About = ({ className }) => {
             </span> */}
             , and I'm just getting started!
           </p>
+          <SocialLinks />
           {/* <p>
             In terms of personal development, I'm really excited to be learning
             data science! I'm starting an intensive data science program with
@@ -59,7 +61,7 @@ const About = ({ className }) => {
             background with predictive modeling to create great digital
             products!
           </p> */}
-          <p className="signature">-Mariana Matias</p>
+          {/* <p className="signature">-Mariana Matias</p> */}
         </div>
       </div>
     </div>

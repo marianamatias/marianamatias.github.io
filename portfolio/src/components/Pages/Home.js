@@ -1,10 +1,12 @@
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import SocialLinks from "../SocialLinks";
+import Button from "../Button";
 
 const Home = ({ className }) => {
+  var history = useHistory();
   return (
     <div className={className}>
       <div className="info">
@@ -13,7 +15,9 @@ const Home = ({ className }) => {
           <p>Front End Developer & UX Designer</p>
           <p>Computer Science @ Georgia Tech</p>
         </span>
-        <SocialLinks />
+        <Button className="float" onClick={() => history.push('/projects')}>
+          See my projects <FontAwesomeIcon icon={faAngleRight} />
+        </Button>
       </div>
       <p className="footer">
         Made with <FontAwesomeIcon icon={faHeart} /> and React.js
@@ -23,6 +27,10 @@ const Home = ({ className }) => {
 };
 
 export default styled(Home)`
+  .float {
+    margin-top: 2rem;
+  }
+
   .footer {
     font-size: 10pt;
     position: fixed;
@@ -63,25 +71,17 @@ export default styled(Home)`
 
     @media screen and (max-width: 992px) {
       h1 {
-        font-size: 4rem;
+        font-size: 7rem;
       }
     }
 
     @media screen and (max-width: 600px) {
       h1 {
-        font-size: 5rem;
+        line-height: 1em;
         text-shadow: none;
-        font-weight: normal;
       }
       .description {
         display: none;
-      }
-
-      ${SocialLinks} {
-        margin-top: 3rem;
-        a {
-          font-size: 2.5rem;
-        }
       }
     }
   }
