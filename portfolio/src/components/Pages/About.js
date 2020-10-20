@@ -26,16 +26,15 @@ const About = ({ className }) => {
             fun with creative computing!
           </p>
           <p>
-            <strong>
-              Since I'm graduating soon (this December 2020!), I'm currently
-              looking for full-time roles as a UX engineer or a similar
-              position.{" "}
-            </strong>
             My professional goal is to use my programming skills and technical
-            knowledge to improve the access to quality education.
+            knowledge to improve the access to quality education. At GT, I've
+            been involved in clubs and initiatives to teach CS to students from
+            underrepresented groups such as women and minorities. I also worked
+            as a TA for the Girls Who Code Summer Immersion Program - one of the
+            most fun and meaningful experiences I've had.
           </p>
           <p>
-            My biggest passion is a combination of traveling, learning
+            My personal passion is a combination of traveling, learning
             languages, and discovering other cultures. I am a huge advocate for
             the benefits of travel - I've done a few exchanges in{" "}
             <a href="https://sites.gatech.edu/ramble-abroad-blog/2018/08/29/why-i-didnt-travel/">
@@ -53,7 +52,12 @@ const About = ({ className }) => {
             </span> */}
             , and I'm just getting started!
           </p>
-          <SocialLinks />
+          <p>
+            <strong>
+              I'm graduating this December 2020 (!) and I'm currently looking
+              for full-time roles as a UX engineer or a similar position.{" "}
+            </strong>
+          </p>
           {/* <p>
             In terms of personal development, I'm really excited to be learning
             data science! I'm starting an intensive data science program with
@@ -61,7 +65,7 @@ const About = ({ className }) => {
             background with predictive modeling to create great digital
             products!
           </p> */}
-          {/* <p className="signature">-Mariana Matias</p> */}
+          <SocialLinks />
         </div>
       </div>
     </div>
@@ -97,11 +101,6 @@ export default styled(About)`
         box-shadow: 10px 15px;
       }
     }
-  }
-  .signature {
-    font-family: "Dawning of a New Day", cursive;
-    font-size: 2rem;
-    font-weight: bold;
   }
   @media screen and (max-width: 992px) {
     .container {
