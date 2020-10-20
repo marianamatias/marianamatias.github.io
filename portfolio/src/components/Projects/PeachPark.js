@@ -242,7 +242,7 @@ const PeachPark = ({ className, match }) => {
             allowFullScreen
           ></iframe>
         </div>
-        <h2>Testing</h2>
+        <h2>Testing & Feedback</h2>
         <p>
           We analyzed the effectiveness of our idea with a focus group as well
           as a think-aloud based on our stakeholder type.
