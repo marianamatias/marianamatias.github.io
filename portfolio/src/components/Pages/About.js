@@ -22,13 +22,12 @@ const About = ({ className }) => {
             I'm Mariana and I'm studying Computer Science @ Georgia Tech. In my
             past internships and projects, I've taken on roles as a front-end
             developer and UX designer. I love exploring the intersection between
-            development and design - from bringing wireframes alive to having
+            development and design - bringing wireframes to life and having
             fun with creative computing!
           </p>
           <p>
-            My professional goal is to use my programming skills and technical
-            knowledge to improve the access to quality education. At GT, I've
-            been involved in clubs and initiatives to teach CS to students from
+            My professional goal is to use my technical knowledge to improve the access to quality education. 
+            At GT, I've been involved in clubs and initiatives to teach CS to students from
             underrepresented groups such as women and minorities. I also worked
             as a TA for the Girls Who Code Summer Immersion Program - one of the
             most fun and meaningful experiences I've had.
@@ -54,8 +53,8 @@ const About = ({ className }) => {
           </p>
           <p>
             <strong>
-              I'm graduating this December 2020 (!) and I'm currently looking
-              for full-time roles as a UX engineer or a similar position.{" "}
+              I graduated in December 2020 and I'm currently looking
+              for full-time roles as a Front End Developer or a similar position.{" "}
             </strong>
           </p>
           {/* <p>

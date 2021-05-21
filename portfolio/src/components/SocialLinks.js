@@ -1,4 +1,4 @@
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -8,6 +8,13 @@ const SocialLinks = ({ className }) => {
   return (
     <div className={className}>
       <p>Stay in touch :)</p>
+      <a
+        href="https://github.com/marianamatias/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <FontAwesomeIcon icon={faGithub} />
+      </a>
       <a
         href="https://www.linkedin.com/in/marimatias/"
         rel="noopener noreferrer"

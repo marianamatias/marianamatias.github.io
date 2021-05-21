@@ -11,19 +11,9 @@ const Projects = ({ className, match }) => {
 
   const fetchProjectTitles = async () => {
     axios
-      .get(
-        `https://cors-anywhere.herokuapp.com/${process.env.REACT_APP_API}/projectTiles/`,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-          },
-        }
-      )
-      // .get(`http://localhost:5000/api/projectTiles/`)
-      .then((res) => res.data)
-      .then((response) => {
-        setProjects(response.projectTiles);
-      })
+      // .get(`http://localhost:5000/projectTiles/`)
+      .get(`https://my-json-server.typicode.com/marianamatias/portfolio-simple-server/projectTiles`)
+      .then((res) => setProjects(res.data))
       .catch((err) => {
         toast.error("Unable to load projects");
       })
